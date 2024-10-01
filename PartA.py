@@ -24,7 +24,7 @@ def std_loops(dataset):
 
     variance = mean_of_squares - mean_dataset**2
 
-    standard_deviation = sqrt(variance)
+    standard_deviation = float(sqrt(variance))
         
     
         
@@ -32,3 +32,9 @@ def std_loops(dataset):
 std_dev = std_loops(dataset)   
 
 print(std_dev)
+
+
+
+
+
+
