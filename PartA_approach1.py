@@ -2,24 +2,24 @@
 
 from math import sqrt
 
-dataset = [1, 2, 3, 4, 5]
 
 
 
 
-def std_loops(dataset):
+
+def std_loops(x):
     sum_dataset = 0
     
     mean_of_squares = 0
     
     
-    for i in range(len(dataset)):
-        sum_dataset += dataset[i]
-        mean_of_squares += (dataset[i])**2
+    for i in range(len(x)):
+        sum_dataset += x[i]
+        mean_of_squares += (x[i])**2
         
-    mean_dataset = sum_dataset / len(dataset)
+    mean_dataset = sum_dataset / len(x)
 
-    mean_of_squares = mean_of_squares / len(dataset)
+    mean_of_squares = mean_of_squares / len(x)
 
 
     variance = mean_of_squares - mean_dataset**2
@@ -29,7 +29,10 @@ def std_loops(dataset):
     
         
     return float(standard_deviation)
-std_dev = std_loops(dataset)   
+
+
+x = [1, 2, 3, 4, 5]
+std_dev = std_loops(x)   
 
 print(std_dev)
 
